@@ -4,14 +4,14 @@ import java.util.Collections;
 import java.util.Iterator;
 
 public class SortedGroup<T extends Comparable<T>> {
-ArrayList<T> sortedGroup;
+    private ArrayList<T> sortedGroup;
 
     public SortedGroup(){
         sortedGroup = new ArrayList<T>();
     }
 
-    public SortedGroup(ArrayList<T> sortedGroup){
-        this.sortedGroup = (ArrayList<T>) sortedGroup.clone();
+    public ArrayList<T> getSortedGroup() {
+        return sortedGroup;
     }
 
     private void sortGroup(){

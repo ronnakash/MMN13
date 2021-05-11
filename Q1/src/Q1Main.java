@@ -23,7 +23,7 @@ public class Q1Main {
             System.out.println(tempStudent);
         }
         SortedGroup passingGradesGroup = reduce(studentGroup, new Student("","",60));
-        System.out.println("\n\nsize after: "+ passingGradesGroup.sortedGroup.size() + "\n\n");
+        System.out.println("\n\nsize after: "+ passingGradesGroup.getSortedGroup().size() + "\n\n");
         Iterator<Student> passingGradesIterator = passingGradesGroup.iterator();
         while (passingGradesIterator.hasNext())
             System.out.println(passingGradesIterator.next());
